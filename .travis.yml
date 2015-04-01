@@ -3,6 +3,7 @@ jdk:
 
 language: java
 script: "java -jar BuildTools.jar"
+after_success: "cp bukkit-* bukkit-new.jar; cp spigot-* spigot-new.jar"
 
 deploy:
   provider: releases
