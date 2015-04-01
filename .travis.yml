@@ -2,7 +2,7 @@ jdk:
   - oraclejdk7
 
 language: java
-script: "java -jar BuildTools.jar -Xmx2G"
+script: "java -Xmx2G -jar BuildTools.jar"
 after_success: "cp bukkit-* bukkit-new.jar; cp spigot-* spigot-new.jar"
 
 deploy:
