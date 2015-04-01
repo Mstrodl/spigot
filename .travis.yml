@@ -1,0 +1,15 @@
+jdk:
+  - oraclejdk7
+
+language: java
+script: "java -jar BuildTools.jar"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: iNjz7zaZinDa2/Pey8XqLVPOyBb4pBO8NfTbxVQnP+29T6irRv5sYnmnnOaiLzk+xljk/CjJJ0QNvDP/Hp4xFWeN2E/qYEE48gGPNDGNrhTFj9pG4p2iGpr/OrHUWj5YZw+KA9EtfnZJZakr7ym+okFBl3+QBl+ejvopCOz9a9s=
+  file:
+    - spigot-new.jar
+    - bukkit-new.jar
+  on:
+    repo: Mstrodl/spigot
